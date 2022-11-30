@@ -10,7 +10,7 @@ class Socket {
     try {
         const io = require("socket.io")(server, {
             cors: {
-                origin: "https://chat-app-ejv8it2fs-khushnoodrizvi.vercel.app",
+                origin: "https://chat-app-ui-nu.vercel.app",
                 methods: ["GET", "POST"]
             }
         });
