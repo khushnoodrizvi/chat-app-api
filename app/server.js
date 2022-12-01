@@ -21,7 +21,7 @@ const store = new mongoDBStrore({
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-app.use(cors())
+app.use(cors({credentials: true, origin: true}))
 // app.use(cors({origin: "https://chat-app-ui-nu.vercel.app", credentials: true}))
 app.use(sessions({
   name : 'chat.sid',
